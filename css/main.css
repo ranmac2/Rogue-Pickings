@@ -11,11 +11,14 @@ body {
 }
 
 .container {
-	width:1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
 	font-variant: small-caps;
 	color: black;
 	font-weight: 700;
@@ -34,14 +37,14 @@ h4 {
 }
 p {
 	font-size: 14px;
-	line-height: 25px;
+	line-height: 21px;
 	padding: 0 30px;
 }
 
 /***** HEADER *****/
 header {
 	height: 110px;
-	border-bottom: 3px solid #77a466
+	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
@@ -55,17 +58,17 @@ header h1 span {
 	color: #77a466;
 }
 
-nav {
+header nav {
 	float: right;
 	padding: 46px 0;
 }
 
-nav ul {
+header nav ul {
 	margin: 0;
 	padding: 0;
 }
 
-nav ul li {
+header nav ul li {
 	text-transform: uppercase;
 	font-weight:700;
 	font-size: 14px;
@@ -73,22 +76,22 @@ nav ul li {
 	display: inline;
 }
 
-nav ul li a {
+header nav ul li a {
 	text-decoration: none;
 	color: #77a466;
 }
 
-#about, #information {
+.top-section,
+.bottom-section {
 	margin: 0 auto;
 	clear: both;
 }
 .main-image {
 	height: auto;
-	float; left;
+	float: left;
 }
 .main-image img {
 	border-bottom: 3px solid #77a466;
-	border-top: 3px solid #77a466;
 }
 
 .main-title {
@@ -106,13 +109,23 @@ nav ul li a {
 	line-height: 25px;
 }
 
-.section-one, .section-two, .section-three {
+.section-one, 
+.section-two, 
+.section-three {
 	width: 399px;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
 }
-.section-two h4, .section-three h4 {
+.section-one h4 {
+	padding: 10px 0;
+}
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.section-two h4, 
+.section-three h4 {
 	padding: 10px 30px;
 }
 .menu {
@@ -127,6 +140,7 @@ nav ul li a {
 .reviews {
 	color: #333;
 	font-size: 16px;
+	line-height: 21px;
 }
 
 .address {
